@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Jokes Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            
+            <h2 id="joke-heading">😂 Random Jokes Generator 😂</h2>
+
+            <p id="joke">Click the button to see a random joke!</p>
+            <button onclick="generateJoke()" class="animated-button">Generate Another Joke</button>
+
+            <!-- Joke Reactions -->
+            <div id="joke-reactions">
+                <span onclick="reactToJoke('😂')">😂</span>
+                <span onclick="reactToJoke('😆')">😆</span>
+                <span onclick="reactToJoke('😅')">😅</span>
+                <span onclick="reactToJoke('😜')">😜</span>
+            </div>
+
+            <!-- Joke Rating -->
+            <div id="joke-rating">
+                <button class="rate-btn" onclick="rateJoke('up')">👍</button>
+                <button class="rate-btn" onclick="rateJoke('down')">👎</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

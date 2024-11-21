@@ -1,0 +1,124 @@
+/* Moving background animation */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+#joke-heading {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #ff6f61;  /* Background color */
+    color: #fff;  /* Text color */
+    font-size: 24px;  /* Font size */
+    font-weight: bold;
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* Optional shadow */
+}
+
+
+h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Optional for a more vibrant look */
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    color: rgb(10, 7, 7);
+    margin-top: 20%;
+}
+
+/* Heading Design (Random Joke Generator) */
+h2 {
+    font-size: 2.5rem; /* Adjust size */
+    font-weight: bold;
+    color: #ffffff; /* Text color */
+    background-color: #ff6f61; /* Soft coral background color */
+    padding: 20px 40px; /* Padding to create a box effect */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    display: inline-block;
+    margin-bottom: 30px; /* Space below the heading */
+    text-transform: uppercase; /* Uppercase for a sleek look */
+    letter-spacing: 2px; /* Spacing between letters */
+}
+
+/* Animated button */
+.animated-button {
+    background-color: #ffffff;
+    color: #ff6f61;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #ff6f61;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 20px rgb(193 29 129);
+}
+
+/* Fun fact text */
+#joke {
+    font-size: 38px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(173, 28, 28, 0.3);
+    color: #333333; /* Text color */
+    font-style: italic; /* Italicize the joke text */
+}
+
+/* Ensure the rest of the content doesn't overlap the button */
+body {
+    padding-bottom: 80px; /* Adds space at the bottom to ensure the button doesn't overlap with content */
+}
+
+#joke-reactions span {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+#joke-reactions span:hover {
+    transform: scale(1.3);
+}
+#joke-rating {
+    margin-top: 10px;
+}
+
+.rate-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: transform 0.3s;
+}
+
+.rate-btn:hover {
+    transform: scale(1.2);
+}
+
